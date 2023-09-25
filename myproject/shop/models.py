@@ -15,7 +15,17 @@ class compra_equipos(models.Model):
     tipo = models.CharField(max_length=100)
     fecha_fabricacion = models.DateField(null=True)
     origen_fabriacion = models.CharField(max_length=100)
-    proyecto = models.ForeignKey(Proyecto,on_delete=models.CASCADE)    
+    proyecto = models.ForeignKey(Proyecto,on_delete=models.CASCADE)
+    
+    def __str__(self) ->str:
+         return f"{self.tipo} {self.fecha_fabricacion}"    
+     
+class venta_equipos(models.Model):
+    nombre = models.CharField(max_length=100)
+    
+    def __str__(self) ->str:
+        return self.nombre
+    
     
     
     
