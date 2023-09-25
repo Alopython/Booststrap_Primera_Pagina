@@ -8,9 +8,11 @@
 
   {% block content %} 
      
-    <p><a href="{% url 'home:about' %}">ABOUT US</a></p>
+    <p><a href="{% url 'home:about' %}">Sobre Nosotros</a></p>
     <p><a href="{% url 'cliente:index' %}">Clientes</a></p>
-    <p><a href="{% url 'shop:index' %}">SHOP</a></p>
+    <p><a href="{% url 'shop:index' %}">Venta Productos</a></p>
+    <p><a href="{% url 'service:index' %}">Servicio de Inspecciones</a></p>
+
 
   {% endblock content %}
  
