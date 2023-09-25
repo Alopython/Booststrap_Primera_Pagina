@@ -30,6 +30,8 @@ urlpatterns += [
     
     path("",include("home.urls")),
     path("cliente/",include("cliente.urls")),
+    path("shop/",include("shop.urls")),
+    
     
     
     

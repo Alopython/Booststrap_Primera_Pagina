@@ -6,9 +6,12 @@
 
 
 
-  {% block content %}    
-    <p><a href="{% url 'home:about' %}">About</a></p>
-    <p><a href="{% url 'cliente:index' %}">Clientes</a></p>    
+  {% block content %} 
+     
+    <p><a href="{% url 'home:about' %}">ABOUT US</a></p>
+    <p><a href="{% url 'cliente:index' %}">Clientes</a></p>
+    <p><a href="{% url 'shop:index' %}">SHOP</a></p>
+
   {% endblock content %}
  
  
