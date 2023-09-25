@@ -4,14 +4,18 @@ from django.db import models
 
 
 
-class EquipoFijo(models.Model):
+class Proyecto(models.Model):
     nombre = models.CharField(max_length=100)
     
     def __str__(self) ->str:
         return self.nombre
     
-class EquipoRotativo(models.Model):
-    nombre = models.CharField(max_length=100)
+class compra_equipos(models.Model):
+    descripcion = models.TextField(max_length=100)
+    tipo = models.CharField(max_length=100)
+    fecha_fabricacion = models.DateField(null=True)
+    origen_fabriacion = models.CharField(max_length=100)
+    proyecto = models.ForeignKey(Proyecto,on_delete=models.CASCADE)    
     
-    def __str__(self) ->str:
-        return self.nombre
+    
+    
