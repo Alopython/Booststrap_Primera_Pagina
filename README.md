@@ -1,89 +1,14 @@
-# Preparación de archivos, carpetas, Git y entorno virtual para el proyecto Django
+# Resumen del Sitio Web
 
-Para ver este archivo con mayor legibilidad, presionar `control + shift + v`
+El sitio fue creado con el proposito de ofrecer un servicio de Ingeneria lo cual incluye compra de equipos o maquinarias desde las plantas de produccion de industria con el finde recondicionar y volver a poner a la venta.
 
-- Extensiones sugeridas para Visual Studio Code y Python
+Tambien ofrecer un servicio de Confiablidad y Mantenimiento con el fin de realziar inspecciones con metodos especiales.
 
-    1. Python (necesario para cualquier proyecto Python)
-    2. Pylance (necesario para cualquier proyecto Python)
+Los app considerados son los siguentes;
 
-## Creación de la estructura del proyecto
+-   Cliente --> Registro de Clientes de distintos origenes
+-   Service --> Servicio de Inspecciones en terreno 
+-   Shop --> Compra de Maquinas o Equipos Utilizados 
 
-- Crear la carpeta `Proyecto`
-- Abrir VSCode en esa carpeta
 
-## Crear el entorno virtual
 
-```bash
-python -m venv .venv
-```
-
-- Activar el entorno desde VSCode como se indica en las diapositivas.
-
-## Crear la estructura del proyecto
-
-- Crear la carpeta `project` (mkdir project)
-- Crear el archivo `.gitignore`
-- Crear el archivo `README.md`
-
-## Instalación de Django
-
-```bash
-pip install django
-```
-
-## Crear el proyecto Django y ejecutar el servidor Django
-
-```bash
-cd project
-django-admin startproject config .
-python manage.py runserver
-```
-
-- Abrir el navegador y ejecutar el servidor Django en la dirección `127.0.0.1:8000`
-
-## Inicialización de Git
-
-Posicionarse el la raiz del proyecto:
-
-```bash
-git init
-```
-
-Nota: Git puede pedirte tu configuración (nombre y email) si aún no lo has hecho.
-
-## Primer commit y nueva rama de desarrollo
-
-```bash
-git add .
-git commit -m "Primer commit"
-```
-
-## Comandos para Git
-
-Para mostrar las ramas:
-```bash
-git branch myapp2-dev
-```
-
-Para crear:
-```bash
-git branch dev
-```
-
-Para cambiar:
-```bash
-git checkout dev
-```
-
-Para fusionar, y subir:
-```bash
-git add .
-git commit -m "mensaje"
-git checkout master
-git merge dev
-git push
-```
-Solucion problema clonar
-
-Prueba master-dev
