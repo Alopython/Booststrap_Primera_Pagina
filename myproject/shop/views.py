@@ -9,9 +9,13 @@ from . import forms
 # Create your views here.
 
 
+
 def index(request):
-    proyectos =models.compra_equipos.objects.all()
-    return render(request,"shop/index.html",{"proyectos":proyectos})
+    compras =models.compra_equipos.objects.all()
+    return render(request,"shop/index.html",{"compras":compras})
+
+
+
 
 def crear(request):   
     if request.method == "POST":
