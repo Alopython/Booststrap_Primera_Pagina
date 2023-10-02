@@ -9,6 +9,7 @@ Los app considerados son los siguentes;
 -   Cliente --> Registro de Clientes de distintos origenes
 -   Service --> Servicio de Inspecciones en terreno 
 -   Shop --> Compra de Maquinas o Equipos Utilizados 
+-   Bosststrap
 
 
 
