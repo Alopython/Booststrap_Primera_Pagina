@@ -16,52 +16,31 @@
         <link href="{% static "home/css/styles.css" %}" rel="stylesheet" />
     </head>
     <body>
+
+        {% include "home/navbar.html" %}
+
+
+
      
-        <nav>{% include "home/navbar.html" %}</nav>
+        <div class="container px-4 px-lg-5">  
 
+            <div class="mb-lg-5 m-5"></div>
+                {% block content %}  
 
+                    {% block content_title %}
 
-        <!-- Page Content-->
-        <div class="container px-4 px-lg-5">
-            {% block <title></title> %}
+                    
+                        
+                    {% endblock content_title %}
+                       
                 
-            {% endblock <title></title> %}
-            <!-- Heading Row-->
-           
+                {% endblock content %}
+            
 
-                    <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src= {% static 'home/imagenes/R&M.jpg' %}  alt="..." /></div>
-                        <div class="col-lg-5">
-                            <h1 class="font-weight-light">Implementacion de acuerdo a sus necesidades</h1>
-                            <p> Servicios de confiabilidad y mantenimiento de plantas industriales que protegen su equipo mientras mantienen su proyecto encaminado y dentro del presupuesto..</p>
-                            <a class="btn btn-primary" href="#!">Call to Action!</a>
-                        </div>
-                    </div>
-                
-                    <!-- Call to Action-->
-                    <div class="card text-white bg-secondary my-5 py-4 text-center">
-                        <div class="card-body"><p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p></div>
-                    </div>
-                    <!-- Content Row-->
-                    <div class="row gx-4 gx-lg-5">
-
-                        {% include "home/card.html" with tarjeta="tarjeta1" %}
-                        {% include "home/card.html" with tarjeta="tarjeta2" %}
-                        {% include "home/card.html" with tarjeta="tarjeta3" %}
-                   
-                      
-                    </div>
-                </div>
                
-                {% block content %}
-
                 
-            {% endblock content %}
 
-            {% include "home/footer.html" %}
-
-
-      
+            {% include "home/footer.html" %}      
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

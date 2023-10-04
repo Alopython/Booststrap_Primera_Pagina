@@ -1,0 +1,23 @@
+{% extends 'equipo/base.html' %}
+
+{% block equipo %}
+
+
+    {% for equipo in object_list  %}
+
+        <ul>
+
+           <li>{{ equipo.nombre }}  </li>
+          
+           
+        </ul>
+
+        
+
+
+        
+    {% endfor %}
+
+
+    
+{% endblock equipo %}

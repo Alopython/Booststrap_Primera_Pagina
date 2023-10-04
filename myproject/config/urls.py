@@ -32,6 +32,8 @@ urlpatterns += [
     path("cliente/",include("cliente.urls")),
     path("shop/",include("shop.urls")),
     path("service/",include("service.urls")),
+    path("equipo/",include("equipo.urls")),
+    
     
     
     
