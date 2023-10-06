@@ -6,17 +6,20 @@
     {% for equipo in object_list  %}
 
         <ul>
-
-           <li>{{ equipo.nombre }}  </li>
-          
+           <li> {{ equipo.nombre }}  </li>
+                <a href="{% url "equipo:equipocategoria_detail" equipo.id %}">Ver Detalle</a>
+                <a href="{% url 'equipo:equipocategoria_update' equipo.id %}">Actualizar </a>
+                <a href="{% url 'equipo:equipocategoria_delete' equipo.id %}">Eliminar</a>   
+                        
            
-        </ul>
-
-        
+        </ul>  
 
 
         
     {% endfor %}
+
+    <a href="{% url "equipo:equipocategoria_create" %}" class="btn btn-success ">Crear Categoria</a>
+    <a href="{% url "home:index" %}" class="btn btn-dark ">Volver a inicio</a>
 
 
     

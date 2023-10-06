@@ -1,0 +1,14 @@
+{% extends 'equipo/base.html' %}
+
+{% block equipo %}
+
+
+<ul>
+    <li><strong>Nombre:</strong>{{object.nombre}}</li>
+</ul>
+
+<a href="{% url "equipo:index" %}" class="btn btn-dark">Volver a inicio</a>
+
+
+    
+{% endblock equipo %}
