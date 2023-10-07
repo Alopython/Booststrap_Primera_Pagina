@@ -10,31 +10,64 @@
 
 <h3>Ensayos No Destructivos</h3>
 
-<p>Pruebas no destructivas superficiales <p>
+{% load static %} 
+<img src="{% static 'home/imagenes/NDT.jpg' %}" >
+
+
+
+
+
+
+
+
+ <h6><li>Pruebas no destructivas superficiales</li></h6>
   
-    VT – Inspección Visual
-    PT – Líquidos Penetrantes
-    MT – Partículas Magnéticas
-    ET – Electromagnetismo
+    <p>
     
-  <p>Pruebas no destructivas volumétricas</p>
-    
-    
-    RT – Radiografía Industrial
-    UT – Ultrasonido Industrial
-    AE – Emisión Acústica
-    
-    <p>Pruebas no destructivas de hermeticidad</p>
-    
-    Pruebas de Fuga
-    Pruebas por Cambio de Presión (Neumática o hidrostática).
-    Pruebas de Burbuja
-    Pruebas por Espectrómetro de Masas
-    Pruebas de Fuga con Rastreadores de Halógeno
+      <ol>
+        
+        
+       <p>VT – Inspección Visual</p>
+       <p>PT – Líquidos Penetrantes</p>
+       <p>MT – Partículas Magnéticas</p>
+       <p>ET – Electromagnetismo</p>         
+        
+       
 
-
-
+      </ol>
      
-</p><a href="{% url "home:index" %}">Ir al menu</a><p></p>  
+    </p>
+
+
+    
+ <h6><li>Pruebas no destructivas volumétricas</li></h6>
+
+ <ol>
+    
+    
+    <p>RT – Radiografía Industrial</p>
+    <p>UT – Ultrasonido Industrial</p>
+    <p>AE – Emisión Acústica</p>
+
+  
+  </ol>
+  
+    
+    <h6><li>Pruebas no destructivas de hermeticidad</li></h6>
+    
+<ol>
+
+    <p>Pruebas de Fuga</p>
+    <p>Pruebas por Cambio de Presión (Neumática o hidrostática).</p>
+    <p>Pruebas de Burbuja</p>
+    <p>Pruebas por Espectrómetro de Masas</p>
+    <p>Pruebas de Fuga con Rastreadores de Halógeno</p>
+
+    
+  </ol>
+     
+</p><a href="{% url "home:index" %}" class="btn btn-secondary"> Ir al menu</a><p></p>  
        
 {% endblock content %}
+
+

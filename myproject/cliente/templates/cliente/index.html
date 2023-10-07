@@ -12,8 +12,8 @@
             <li>{{cliente.nombre}} {{cliente.apellido}}</li>
     {% endfor %}
     </ul>
-    <p><a href="{% url "cliente:crear" %}">Crear cliente</a></p>
-    <p><a href="{% url "home:index" %}">Ir al menu</a></p>
+    <p><a href="{% url "cliente:crear" %}" class="btn btn-primary" type="button" value=" input">Crear cliente</a></p>
+    <p><a href="{% url "home:index" %}"class="btn btn-secondary">Ir al menu</a></p>
 
 {% endblock content %}
 

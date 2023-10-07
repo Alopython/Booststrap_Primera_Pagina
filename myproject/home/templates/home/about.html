@@ -1,16 +1,24 @@
+
+
 {% extends 'home/base.html' %}
 
 
-{% block <title></title> %}
+
+
+{% block title %}
 <h2>Sobre Nosotros</h2>    
-{% endblock <title></title> %}
+{% endblock title %}
 
 
 
 {% block content %}
 
 
-<p>Visión
+{% load static %} 
+<img src="{% static 'home/imagenes/about.jpeg' %}"   width="1200" >
+
+
+<h4>Visión</h4>
 
     “Ofrecer a nuestros clientes soluciones sustentables de
      mantenimiento e ingeniería, para llegar a implementar la 
@@ -19,7 +27,7 @@
      tecnología y técnicas de vanguardia”.</p>
 
 <p>
-    Misión
+    <h4>Misión</h4>
     
     “Queremos ser reconocidos de manera internacional en múltiples
      ámbitos, de esta manera implementar soluciones sustentables e 
@@ -28,32 +36,27 @@
 </p>
 
 <p>
-    Valores
+   <h4>Valores</h4> 
 
-    • Compromiso.
+
+   <ul>
+    <li>Compromiso</li>
+    <li>Trabajo en equipo</li>
+    <li>Innovación</li>
+    <li>Responsabilidad.</li>
+    <li>Honestidad</li>    
+    <li>Calidad en servicios y productos.</li>
+  </ul>
+
     
-    • Trabajo en equipo.
+      
+
     
-    • Innovación.
+  
     
-    • Responsabilidad.
-    
-    • Honestidad.
-    
-    • Calidad en servicios y productos.
+   
 <p>
-    
-
-
-
-
-
-
  
 
-
-
-
-
-<p></p><a href="{% url "home:index" %}">Ir al menu</a><p></p>
+<p></p><a href="{% url "home:index" %}" class="btn btn-secondary" >Ir al menu</a><p></p>
 {% endblock content %}
