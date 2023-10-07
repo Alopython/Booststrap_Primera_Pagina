@@ -9,16 +9,16 @@
 
 <ul>
     {% for compra in compras %}
-            <li>{{compra.tipo}} </li>
+            <li>{{compra.descripcion}} -- {{compra.tipo}} </li>
     {% endfor %}
     </ul>
 
 
 
 
-<p><a href="{% url "shop:crear" %}">Ingreso Equipo</a></p> 
+<p><a href="{% url "shop:crear" %}" class="btn btn-primary" type="button" value="Input">Ingreso Equipo</a></p> 
      
-</p><a href="{% url "home:index" %}">Ir al menu</a><p></p>
+</p><a href="{% url "home:index" %}"  class="btn btn-secondary" >Ir al menu</a><p></p>
  
        
 {% endblock content %}
