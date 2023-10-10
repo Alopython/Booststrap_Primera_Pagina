@@ -17,15 +17,12 @@ def signup(request):
                 user = User.objects.create_user(
                     request.POST["username"], password=request.POST["password1"])
                 user.save()
-                login(request, user)
-                return redirect('/')
+                #login(request, user)
+                return redirect('/users/signin')
             except IntegrityError:
-                return render(request, 'users/signup.html', {"form": UserCreationForm, "error": "Username already exists."})
+                return render(request, 'users/signup.html', {"form": UserCreationForm, "error": "Usuario ya existe."})
 
-        return render(request, 'users/signup.html', {"form": UserCreationForm, "error": "Passwords did not match."})
-
-
-
+        return render(request, 'users/signup.html', {"form": UserCreationForm, "error": "La clave no coincide."})
 
 
 def signin(request):
@@ -35,12 +32,10 @@ def signin(request):
         user = authenticate(
             request, username=request.POST['username'], password=request.POST['password'])
         if user is None:
-            return render(request, 'users/signin.html', {"form": AuthenticationForm, "error": "Username or password is incorrect."})
+            return render(request, 'users/signin.html', {"form": AuthenticationForm, "error": "Usuario o clave incorrecto."})
 
         login(request, user)
         return redirect('/')
-
-
 
         
        

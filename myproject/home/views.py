@@ -9,6 +9,8 @@ from . import forms
 
 
 def index(request):
+    print("hola")
+    print(request.user.is_authenticated)
     return render(request,"home/index.html")
 
 def about(request):
