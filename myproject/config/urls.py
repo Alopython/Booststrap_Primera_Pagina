@@ -17,11 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from . import views
+from users import views as users_views
+
+
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/', views.saludo),
+    
     
     
 ]
@@ -33,6 +37,9 @@ urlpatterns += [
     path("shop/",include("shop.urls")),
     path("service/",include("service.urls")),
     path("equipo/",include("equipo.urls")),
+    path("users/", include("users.urls")),
+   
+     
     
     
     
@@ -42,4 +49,3 @@ urlpatterns += [
 ]   
     
     
-

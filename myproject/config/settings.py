@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     "home",
     "shop",
     "service",
-    "equipo"
+    "equipo",
+    "users",
 ]
 
 MIDDLEWARE = [
