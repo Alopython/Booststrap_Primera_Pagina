@@ -47,7 +47,7 @@ Necesitas tener insltado
 
 ```
 
-## 🚀 Primeros pasos
+
 
 Para ejecutar este proyecto en su pc local debe seguir los siguentes;
 
@@ -70,41 +70,10 @@ Una vez que pip haya terminado de descargar las dependencias:
 y navega a  http://127.0.0.1:8000/
 
 
-## Configuración
 
-Explica cómo configurar tu proyecto. Esto puede incluir la configuración de la base de datos, variables de entorno o cualquier otro ajuste importante.
-
-```bash
-python manage.py migrate
 ```
 
-## Uso
 
-Proporciona información sobre cómo ejecutar y utilizar tu aplicación. Incluye ejemplos de comandos o scripts si es necesario.
-
-```bash
-python manage.py runserver
-```
-
-## Contribución
-
-Si deseas que otros contribuyan a tu proyecto, describe cómo pueden hacerlo. Esto podría incluir instrucciones sobre cómo enviar solicitudes de extracción o informar problemas.
-
-## Licencia
-
-Indica bajo qué licencia se distribuye tu proyecto. Puedes utilizar una licencia de código abierto común como MIT, GPL, o crear tu propia licencia.
-
-## Contacto
-
-Proporciona información de contacto para que otros desarrolladores o usuarios puedan comunicarse contigo si tienen preguntas o comentarios.
-
-## Agradecimientos
-
-Agradece a cualquier persona o proyecto del que hayas dependido para completar tu proyecto.
-
-Este es un ejemplo básico de un README. Asegúrate de personalizarlo según las necesidades específicas de tu proyecto, incluyendo más detalles y secciones relevantes.
-has context menu
-Compose
 
 
 
