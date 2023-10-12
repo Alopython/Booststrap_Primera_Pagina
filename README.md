@@ -52,7 +52,7 @@ Necesitas tener insltado
 Para ejecutar este proyecto en su pc local debe seguir los siguentes;
 
 Lo primero que debemos hacer es clonar el repositorio:
-$ git clone https://github.com/Alopython/Booststrap_Primera_Pagina.git
+$ git clone https://github.com/Alopython/PlaygroundFinalProject-Ozdemir.git
 $ cd myproject
 
 Cree un entorno virtual para instalar dependencias y actívelo:
