@@ -29,7 +29,7 @@ Al iniciar Sesion;
 
 ### 📋 Requisitos previos
 
-¿Qué cosas necesitas para instalar el software y cómo lo instalas?
+¿Qué cosas necesitas tner instalada?
 
 ```
 Necesitas tener insltado 
